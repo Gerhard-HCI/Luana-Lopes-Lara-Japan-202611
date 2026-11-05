@@ -398,7 +398,7 @@
   <div class="hdr-top">
     <div class="hdr-left">
       <div>
-        <div class="hdr-dest">Tokyo · Kyoto · Ise-Shima<span class="hdr-ver" id="hdr-ver">v2</span></div>
+        <div class="hdr-dest">Tokyo · Kyoto · Ise-Shima<span class="hdr-ver" id="hdr-ver">v3</span></div>
         <div class="hdr-hc">Happy Camper</div>
       </div>
     </div>
@@ -521,7 +521,7 @@
    Source: Happy Camper Proposal v17 · Luana Lopes Lara & Max · Japan Nov 2026 (4 Nov 2026)
 ═══════════════════════════════════════════════════════ */
 var CONFIG = {
-  version: 'v2',
+  version: 'v3',
   tripTitle: 'Tokyo, Kyoto & Ise-Shima',
   client: 'Luana Lopes Lara & Max Van Hoegaerden Herrmann Telles',
   startDate: '2026-11-20',
@@ -538,7 +538,13 @@ var CONFIG = {
   },
   /* Key people for header chips. tel:null → routes via Gerhard (fails gracefully) */
   people: {
-    host:     { display:'Your Happy Camper host', chip:'🌿 Happy Camper host · with you throughout', role:'Travels with you every day, in your security team’s vehicle', icon:'🌿', tel:null, bio:null, tags:null },
+    host:     { display:'Iko-san', chip:'🌿 Iko-san · your Happy Camper host', role:'Ikuko Tamura · with you every day, in your security team’s vehicle', icon:'🌿', tel:'+818034270884', wa:'818034270884',
+      bio:[
+        'Iko-san spent ten years with Emirates, the last six of them in First Class, then worked as personal assistant to the chairman of a leading Abu Dhabi group. Anticipating what a guest needs before it is asked for, quietly and discreetly, is second nature to her.',
+        'Back in Japan she has looked after overseas VIP guests as a private guide and concierge, taught hotel management, and worked in a traditional ryokan in Shizuoka, learning omotenashi, Japan’s art of hospitality, from the inside.',
+        'Schooled in both California and Japan, she moves easily between Western and Japanese expectations, and has lived and worked in the UAE, the Maldives and the United States. She is based in Tokyo, and will be with you every day of the trip.'
+      ],
+      tags:['10 years Emirates · 6 in First Class','VIP private guide','Ryokan omotenashi','Japanese · English'] },
     security: { display:'Security team', chip:'🛡️ Security team · all ground transport', role:'Your two officers · vehicle and driving', icon:'🛡️', tel:null, bio:null, tags:null, chipOnly:true }
   },
   /* FX defaults (offline). JPY per 1 unit. */
@@ -583,7 +589,7 @@ var DAYS = [
       { time:'05:25', type:'flight', badge:'Logistics', status:'logistics',
         title:'Arrive — Haneda Terminal 2', sub:'ANA NH 159 · JFK → Haneda · First Class',
         q:'Haneda Airport Terminal 2', addr:'Haneda Airport Terminal 2, Ota-ku, Tokyo', mapsLink:null,
-        notes:'Your Happy Camper host meets you at arrivals and travels with you in your security team’s vehicle. Luggage is handled for you.' },
+        notes:'Iko-san, your Happy Camper host, meets you at arrivals and travels with you in your security team’s vehicle. Luggage is handled for you.' },
       { time:'06:30', type:'hotel', badge:'FF Global', status:'logistics',
         title:'Aman Tokyo', sub:'About 30 minutes from Haneda · time to rest',
         q:'Aman Tokyo', addr:HOTELS.aman.addr, mapsLink:null,
@@ -613,7 +619,7 @@ var DAYS = [
         title:'Sushi Nakano', sub:'Dinner · Edomae sushi · private room requested',
         facts:['Sushi omakase','2 covers','About 2 hours'],
         q:'Sushi Nakano', addr:'3-4-12 Minami-Aoyama, Minato-ku, Tokyo', mapsLink:null,
-        notes:'A small counter in Minami-Aoyama and the right first omakase for this trip: serious Edomae sushi — rice seasoned with a blend of aged red vinegars, fish aged and cured with care — served by a chef who is warm, funny and happy to explain every piece in English. We have requested the private room and an omakase built around classic, approachable cuts agreed with you in advance. The entrance is a plain wooden sliding door with a very small sign; your host will walk you in.',
+        notes:'A small counter in Minami-Aoyama and the right first omakase for this trip: serious Edomae sushi — rice seasoned with a blend of aged red vinegars, fish aged and cured with care — served by a chef who is warm, funny and happy to explain every piece in English. We have requested the private room and an omakase built around classic, approachable cuts agreed with you in advance. The entrance is a plain wooden sliding door with a very small sign; Iko-san will walk you in.',
         dietary:DIET_BOTH,
         alert:FRAGRANCE }
     ] },
@@ -626,7 +632,7 @@ var DAYS = [
       { time:'10:00', type:'activity', badge:'Walk-in', status:'walk-in',
         title:'Asakusa · Senso-ji', sub:'20 minutes from Aman',
         q:'Senso-ji', addr:'2-3-1 Asakusa, Taito-ku, Tokyo', mapsLink:null,
-        notes:'Tokyo’s oldest temple, through the great Kaminarimon lantern gate and along Nakamise’s stalls. Busy on a Saturday — your host knows the quieter side lanes.' },
+        notes:'Tokyo’s oldest temple, through the great Kaminarimon lantern gate and along Nakamise’s stalls. Busy on a Saturday — Iko-san knows the quieter side lanes.' },
       { time:'', type:'activity', badge:'Requested', status:'requested',
         title:'Kappabashi · birthday knife at Kama-Asa', sub:'Hand-forged · engraved with Max’s name',
         q:'Kama-Asa Kappabashi', addr:'2-24-1 Matsugaya, Taito-ku, Tokyo', mapsLink:null,
@@ -712,13 +718,13 @@ var DAYS = [
     notes:'Japan’s greatest collection of samurai swords and armour, a bowl of proper Tokyo ramen, the lanes of old Tokyo, the city at sunset from above, and a night ending in one of Tokyo’s legendary vinyl bars. 23 November is a national holiday (Labour Thanksgiving Day); we reconfirm holiday opening of the museum and the restaurant.',
     stops:[
       { time:'09:30', type:'activity', badge:'Walk-in', status:'walk-in',
-        title:'Tokyo National Museum', sub:'Ueno · with your host · about 2 hours',
+        title:'Tokyo National Museum', sub:'Ueno · with Iko-san · about 2 hours',
         q:'Tokyo National Museum', addr:'13-9 Ueno Park, Taito-ku, Tokyo', mapsLink:null,
-        notes:'Japan’s oldest and largest museum. Your host takes you straight to what matters: the sword and armour galleries, Buddhist sculpture and the national treasures on rotation in the Honkan. Normally closed on Mondays but open for the holiday — reconfirmed before you arrive.' },
+        notes:'Japan’s oldest and largest museum. Iko-san takes you straight to what matters: the sword and armour galleries, Buddhist sculpture and the national treasures on rotation in the Honkan. Normally closed on Mondays but open for the holiday — reconfirmed before you arrive.' },
       { time:'12:00', type:'restaurant', badge:'HC selection', status:'suggestion', table:true,
         title:'Lunch · Tokyo ramen', sub:'A classic counter near Ueno',
         facts:['Ramen','À la carte'],
-        notes:'Quick, steaming and very Japanese — your host will take you to the counter.',
+        notes:'Quick, steaming and very Japanese — Iko-san will take you to the counter.',
         dietary:DIET_MAX },
       { time:'13:30', type:'activity', badge:'Walk-in', status:'walk-in',
         title:'Yanaka · old Tokyo', sub:'About 1.5 hours on foot',
@@ -765,7 +771,7 @@ var DAYS = [
       { time:'Early pm', type:'transport', badge:'Logistics', status:'logistics',
         title:'Nozomi · Green Car', sub:'Tokyo → Kyoto · about 2 hours 15 minutes',
         q:'Tokyo Station', addr:'1-9-1 Marunouchi, Chiyoda-ku, Tokyo', mapsLink:null,
-        notes:'First-class seats on the Tokaido Shinkansen — Mt Fuji on the right-hand side on a clear day. Seats for your security team requested nearby; neighbouring seats for extra privacy depend on availability. Your host escorts you at both stations.' },
+        notes:'First-class seats on the Tokaido Shinkansen — Mt Fuji on the right-hand side on a clear day. Seats for your security team requested nearby; neighbouring seats for extra privacy depend on availability. Iko-san escorts you at both stations.' },
       { time:'16:00', type:'hotel', badge:'FF Global', status:'logistics',
         title:'Capella Kyoto', sub:'15 minutes from Kyoto Station · Miyagawa-cho',
         q:'Capella Kyoto', addr:HOTELS.capella.addr, mapsLink:null,
@@ -960,9 +966,9 @@ var DAYS = [
         title:'Back at Aman', sub:'Spa, a bath and packing',
         q:'Aman Tokyo', addr:HOTELS.aman.addr, mapsLink:null },
       { time:'19:30', type:'transport', badge:'Logistics', status:'logistics',
-        title:'To Haneda', sub:'About 30 minutes · your host travels with you',
+        title:'To Haneda', sub:'About 30 minutes · Iko-san travels with you',
         q:'Haneda Airport Terminal 2', addr:'Haneda Airport Terminal 2, Ota-ku, Tokyo', mapsLink:null,
-        notes:'Your host assists with ANA First check-in. Dinner in the ANA Suite Lounge.' },
+        notes:'Iko-san assists with ANA First check-in. Dinner in the ANA Suite Lounge.' },
       { time:'22:55', type:'flight', badge:'Logistics', status:'logistics',
         title:'ANA NH 160 → New York JFK', sub:'Haneda · First Class',
         notes:'Sayonara, until next time.' }
@@ -1477,7 +1483,7 @@ function renderUtilities(){
     +'<button type="button" class="cta-btn" style="background-color:#131e36!important" onclick="openChef()">🇯🇵 Show the chef</button></div>'
     +'<div class="section-label"><span class="sec-num">3</span>Getting Around</div>'
     +'<div class="util-card"><ul class="info-list">'
-    +'<li><span class="info-emoji">🛡️</span><div class="info-text"><strong>Your security team drives</strong>Ground transport throughout is your security team’s vehicle, with your Happy Camper host on board. We share the daily programme, timings and addresses with the team in advance.</div></li>'
+    +'<li><span class="info-emoji">🛡️</span><div class="info-text"><strong>Your security team drives</strong>Ground transport throughout is your security team’s vehicle, with Iko-san, your Happy Camper host, on board. We share the daily programme, timings and addresses with the team in advance.</div></li>'
     +'<li><span class="info-emoji">🚄</span><div class="info-text"><strong>Shinkansen</strong>Gran Class to Nagano (22 Nov) and the Nozomi Green Car to Kyoto (24 Nov) and back from Nagoya (28 Nov). Seats for your security team are requested nearby. Be on the platform five minutes early — doors close to the second.</div></li>'
     +'<li><span class="info-emoji">🧳</span><div class="info-text"><strong>Luggage forwarded</strong>Your large suitcases travel hotel to hotel the day before each move, so you travel light. Pack a small overnight bag. Helicopter weight limits are strict, so bags always go by road.</div></li>'
     +'<li><span class="info-emoji">🚕</span><div class="info-text"><strong>Show the driver</strong>The <strong>Taxi</strong> button on each stop and hotel opens a full-screen card in Japanese: name, address and a line asking to be taken there. Useful if you ever step out on your own — hand your phone to the driver.</div></li>'
@@ -1543,6 +1549,7 @@ function renderEmergency(){
     +crow('ℹ️','ci-b','Japan Visitor Hotline','24h · English · JNTO','tel:+815038162787','cb','📞 Call')
     +'</div>'
     +'<div class="section-label"><span class="sec-num">2</span>Happy Camper — 24/7 during your trip</div><div class="contact-card">'
+    +crow('🌿','ci-p','Iko-san — your host','Ikuko Tamura · with you every day · WhatsApp','https://wa.me/'+CONFIG.people.host.wa,'cw','💬 WhatsApp',true)
     +crow('🌿','ci-n','Gerhard — Happy Camper',esc(G.role),'https://wa.me/'+G.wa,'cw','💬 WhatsApp',true)
     +crow('🌿','ci-n','Gerhard — call',esc(G.tel.replace('+81','+81 ')),'tel:'+G.tel,'cn','📞 Call')
     +crow('🌿','ci-n','Tomoko-san — Happy Camper',esc(T.role)+' · main line','tel:'+T.tel,'cn','📞 Call')
